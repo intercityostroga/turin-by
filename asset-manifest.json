@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/turin-by/static/js/main.818e2460.js",
+    "main.js": "/turin-by/static/js/main.0f4fb7c1.js",
     "index.html": "/turin-by/index.html",
-    "main.818e2460.js.map": "/turin-by/static/js/main.818e2460.js.map"
+    "main.0f4fb7c1.js.map": "/turin-by/static/js/main.0f4fb7c1.js.map"
   },
   "entrypoints": [
-    "static/js/main.818e2460.js"
+    "static/js/main.0f4fb7c1.js"
   ]
 }
