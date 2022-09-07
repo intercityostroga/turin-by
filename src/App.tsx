@@ -1,25 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import GlobalStyles from "./styles/stylesGlobal/global";
+import ListOrders from "./components/ListOrder";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import LogIn from "./components/Login";
+import DescriptionOrders from "./components/Description";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <GlobalStyles />
+      <Routes>
+        <Route path="*" element={<LogIn />}></Route>
+        <Route path="/" element={<LogIn />}></Route>
+        <Route path="/listOrders" element={<ListOrders />}></Route>
+        <Route path="/OrderInfo/:Id" element={<DescriptionOrders />}></Route>
+      </Routes>
+    </>
   );
 }
 
